@@ -28,7 +28,6 @@ Selecionar checkbox
 selecionar capitão america
     [tags]      cap-america
     Go to                     ${Url}/checkboxes
-
     sleep                            2
     Select Checkbox                  ${capitao}
     Checkbox Should Be Selected      ${capitao}
@@ -41,7 +40,6 @@ selcionar homem de ferro
     Select Checkbox                  ${iron}
     Checkbox Should Be Selected      ${iron}
     sleep                            2
-  
 
 selcionar pantera negra
     [Tags]      pantera-xpath
