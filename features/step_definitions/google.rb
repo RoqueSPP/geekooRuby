@@ -29,11 +29,15 @@ end
 
 When('pesquisar') do |table|
   user = table.hashes.first
-  find(:xpath,"/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input").set user[:nome]
+  find(:xpath,"/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input").set user[:nome01]
   find(:xpath,"/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input").send_keys(:enter)
 end
 
 Then('valido o status') do |table|
   statuss =table.hashes.first
-  expect(page).to have_title  statuss[:status]
+  
+  rock = find(:xpath,"/html/body/div[7]/div/div[8]/div[2]/div[1]/div/div[2]/div[1]/div/div[1]/div/div/div[2]/h2").text
+  
+  expect(rock).to have_text  statuss[:status01]
+
 end

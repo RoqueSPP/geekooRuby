@@ -35,13 +35,13 @@ Then valido o status
 Scenario Outline: pesquisar 02
 Given que eu esteja no site "https://google.com.br"
 When pesquisar
-|nome |
-|<nome> |
+|nome01     |
+|<nome01> |
 Then valido o status
-|status |
-|<status> |
+|status01     |
+|<status01> |
 
 Examples:
-| nome              | status                               |
-| roque             |roque - Pesquisa Google               |
-| e2e treinamentos  |e2e treinamentos - Pesquisa Google    |
+| nome01            | status01 |
+| Roque             |          |
+| E2E treinamentos  |          |
