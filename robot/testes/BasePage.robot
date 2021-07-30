@@ -9,6 +9,6 @@ ${Url}=     https://training-wheels-protocol.herokuapp.com
 ***Keywords***
 
 abrir navegador
-    Open Browser                     ${Url}/checkboxes      Chrome
+    Open Browser                     ${Url}      Chrome
 fechar navegador
     Close Browser
