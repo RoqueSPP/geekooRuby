@@ -30,18 +30,24 @@ Then valido o status
 |Roque  |
 |Carlito|
 
+Examples:
+| nome01            |status01         |
+| carlito           |carlito          |
+| E2E treinamentos  |E2E treinamentos |
 
 @busca04
 Scenario Outline: pesquisar 02
 Given que eu esteja no site "https://google.com.br"
 When pesquisar
-|nome01     |
-|<nome01> |
+|nome01           |
+|carlito          |
+|e2e treinamentos |
 Then valido o status
-|status01     |
-|<status01> |
+|status01           |
+| carlito           |
+| E2E treinamentos  |
 
 Examples:
-| nome01            | status01 |
-| Roque             |          |
-| E2E treinamentos  |          |
+| nome01            |status01         |
+| carlito           |carlito          |
+| E2E treinamentos  |E2E treinamentos |
